@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tdevm.storagetest.MainActivity">
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/float_action_menu_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="#DA4336"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#DA4336"
+            android:src="@drawable/ic_insert_photo_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_label="Gallery" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#DA4336"
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            fab:fab_size="mini"
+            fab:fab_label="Camera" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_documents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#DA4336"
+            android:src="@drawable/ic_insert_drive_file_black_24dp"
+            fab:fab_size="mini"
+            fab:fab_label="Document" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <Button
+        android:text="Retrieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_get_image"
+        android:layout_above="@+id/float_action_menu_main"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="GRID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn_get_image"
+        android:id="@+id/btn_go_grid" />
+
+</RelativeLayout>
